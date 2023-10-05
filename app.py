@@ -428,6 +428,7 @@ def update_student(student_id):
     return jsonify(response), status_code
 
 
+
 @app.route('/students/<int:student_id>', methods=['DELETE'])
 def delete_student(student_id):
     response, status_code = student_handler.delete_student(student_id)
